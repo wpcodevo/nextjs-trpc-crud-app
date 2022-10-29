@@ -15,12 +15,12 @@ import {
 } from "./note.schema";
 
 const t = initTRPC.create({
-  transformer: superjson
+  transformer: superjson,
 });
 
 export const appRouter = t.router({
   getHello: t.procedure.query((req) => {
-    return { message: "Welcome to Full-Stack tRPC CRUD App" };
+    return { message: "Welcome to Full-Stack tRPC CRUD App with Next.js" };
   }),
   createNote: t.procedure
     .input(createNoteSchema)
