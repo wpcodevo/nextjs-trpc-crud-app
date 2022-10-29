@@ -4,8 +4,8 @@ import { twMerge } from "tailwind-merge";
 import NoteModal from "../note.modal";
 import UpdateNote from "./update.note";
 import { toast } from "react-toastify";
-import { INote } from "../../type";
-import { trpc } from "../../utils/trpc";
+import { INote } from "~/type";
+import { trpc } from "~/utils/trpc";
 import { useQueryClient } from "@tanstack/react-query";
 
 type NoteItemProps = {
