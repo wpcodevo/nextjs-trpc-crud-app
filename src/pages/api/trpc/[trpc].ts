@@ -3,7 +3,10 @@ import { appRouter } from "~/server/app.router";
 import Cors from "cors";
 import { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 
-const cors = Cors();
+const cors = Cors({
+  origin: [`${process.env.NEXT_PUBLIC_VERCEL_URL}`],
+  credentials: true,
+});
 
 function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: any) {
   return new Promise((resolve, reject) => {
