@@ -6,7 +6,7 @@ import { AppRouter } from "~/server/app.router";
 export const trpc = createTRPCNext<AppRouter>({
   config({ ctx }) {
     const url = process.env.NEXT_PUBLIC_VERCEL_URL
-      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/trpc`
       : "http://localhost:3000/api/trpc/";
 
     return {
