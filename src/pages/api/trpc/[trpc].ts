@@ -19,11 +19,6 @@ function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: any) {
 
 export function withCors(handler: NextApiHandler) {
   return async (req: NextApiRequest, res: NextApiResponse) => {
-    if (req.method === "OPTIONS") {
-      console.log("Hi, I was called");
-      res.writeHead(200);
-      return res.end();
-    }
     await runMiddleware(req, res, cors);
 
     return await handler(req, res);
