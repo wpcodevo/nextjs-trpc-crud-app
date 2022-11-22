@@ -4,13 +4,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "db:migrate": "npx prisma migrate dev --name note-entity --create-only && yarn prisma generate",
+    "db:migrate": "npx prisma migrate dev --name note-entity --create-only && npx prisma generate",
     "db:push": "npx prisma db push",
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
-    "@prisma/client": "^4.5.0",
+    "@prisma/client": "^4.6.1",
     "@tanstack/react-query": "^4.13.0",
     "@tanstack/react-query-devtools": "^4.13.0",
     "@trpc/client": "^10.0.0-proxy-beta.26",
@@ -35,7 +35,7 @@
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
-    "prisma": "^4.5.0",
+    "prisma": "^4.6.1",
     "tailwindcss": "^3.2.1",
     "typescript": "4.8.4"
   }
