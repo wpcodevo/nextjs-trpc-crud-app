@@ -6,7 +6,7 @@
     "start": "next start",
     "db:migrate": "npx prisma migrate dev --name note-entity --create-only && yarn prisma generate",
     "db:push": "npx prisma db push",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    "postinstall": "prisma generate"  
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
