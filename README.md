@@ -1,27 +1,25 @@
-# Next.js + Tailwind CSS Example
+# Build a Full Stack tRPC CRUD App with Next.js and Prisma ORM
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This article will teach you how to build a full-stack tRPC CRUD (Create, Read, Update, and Delete) app with Next.js. The tRPC API will be built on Next.js edge runtime and the tRPC client will be created with React.js. For data storage, we'll use Prisma ORM to query and mutate an SQLite database.  
 
-## Deploy your own
+![Build a Full Stack tRPC CRUD App with Next.js and Prisma ORM](https://codevoweb.com/wp-content/uploads/2022/10/Build-a-Full-Stack-tRPC-CRUD-App-with-Next.js-and-Prisma-ORM.webp)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Topics Covered
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- Run the Next.js tRPC CRUD App Locally
+- Setup Next.js as a Monorepo
+- Setup Prisma and Create the Database Model
+- Create the Next.js tRPC API
+    - Create Zod Validation Schemas
+    - Create the tRPC Procedures
+    - Create the tRPC Server
+    - Connect the tRPC Router to Next.js
+- Create the Next.js tRPC Client
+    - Create Reusable React Components
+    - React Query Create Record Mutation
+    - React Query Update Record Mutation
+    - React Query Delete Record Mutation
+    - React Query Fetch All Records Query
 
-## How to use
+Read the entire article here: [https://codevoweb.com/build-a-fullstack-trpc-crud-app-with-nextjs/](https://codevoweb.com/build-a-fullstack-trpc-crud-app-with-nextjs/)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
